@@ -1,0 +1,5 @@
+day=list(map(int, input().split()))
+b=[]
+for i in range(0, len(day)):
+    b.append(day[day[i]])
+print(b)

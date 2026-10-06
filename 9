@@ -1,0 +1,13 @@
+x=int(input())
+tap=[]
+while x!=0:
+    b = x%10
+    tap.append(b)
+    x = (x-b)//10
+tapdao=[]
+for i in range(len(tap)):
+    tapdao.append(tap[len(tap)-i-1])
+if tapdao==tap:
+    print("true")
+else:
+    print("false")

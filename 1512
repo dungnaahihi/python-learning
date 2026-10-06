@@ -1,0 +1,9 @@
+a=list(map(int,input().split()))
+count=0
+j=1
+while j <= len(a)-1:
+    for i in range(0,j):
+        if a[i] == a[j]:
+            count+=1
+    j+=1
+print(count)

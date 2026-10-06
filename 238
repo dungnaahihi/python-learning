@@ -1,0 +1,5 @@
+x=list(map(int, input().spilt()))
+for j in range(len(x)):
+    i=0
+    while 0 <= i < j and j < i <= len(x)-1:
+        

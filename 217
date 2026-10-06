@@ -1,0 +1,9 @@
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+    if i in b:
+        print("true")
+        break
+    b.append(i)
+else:
+    print("false")
