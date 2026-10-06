@@ -1,0 +1,26 @@
+def chanle(x):
+    i=0
+    for j in range(len(x)-1):
+        if x[j]%2==0:
+            i+=1
+        if x[j]%2!=0:
+            if x[j+1]%2==0:
+                x[i], x[j+1]=x[j+1], x[i]
+                i+=1
+    return x
+def sapxep(nums):
+    for i in range(len(nums)-1):
+        j=i
+        while nums[j]>nums[j+1] and j>=0:
+            nums[j],nums[j+1]=nums[j+1],nums[j]
+            j-=1
+    return nums
+b=list(map(int, input().split()))
+chanle(b)
+for i in range(len(chanle(b))):
+    if chanle(b)[i]%2!=0:
+        chan = sorted(b[:i])
+        le = sorted(b[i:])
+        break
+b = chan + le
+print(b)

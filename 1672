@@ -1,0 +1,14 @@
+n=int(input())
+a=[]
+b=[]
+for i in range(n):
+    a.append(list(map(int, input().split())))
+for i in a:
+    b.append(sum(i))
+max=b[0]
+for i in b:
+    if i>max:
+        max=i
+print(max)
+
+    

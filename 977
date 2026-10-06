@@ -1,0 +1,5 @@
+x=list(map(int, input().split()))
+b=[]
+for i in x:
+    b.append(i*i)
+print(sorted(b))

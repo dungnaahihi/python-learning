@@ -1,0 +1,22 @@
+x=list(map(int ,input().split()))
+c=[]
+i=0
+for i in range(len(x)):
+    for j in range(i+1, len(x)):
+        for k in range(j+1, len(x)):
+            if x[i]+x[j]+x[k]==0:
+                b=[]
+                b.append(x[i])
+                b.append(x[j])
+                b.append(x[k])
+                c.append(b)
+d=[]
+for i in c:
+    d.append(tuple(sorted(i)))
+d=list(set(d))
+ans=[list(i) for i in d]
+print(ans)
+        
+
+
+

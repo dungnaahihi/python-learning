@@ -1,0 +1,13 @@
+nums=list(map(int, input().split()))
+n = len(nums)
+b = []
+c=[]
+d=[]
+for i in range(0,n//2):
+            b.append(nums[i])
+for i in range(n//2,n):
+            c.append(nums[i])
+for i in range(0,n//2):
+            d.append(b[i])
+            d.append(c[i])
+print(d)
